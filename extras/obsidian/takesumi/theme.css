@@ -1,0 +1,158 @@
+/* takesumi for Obsidian. Dark mode only.
+   Colors come from lua/takesumi/palette.lua; the comments name the palette step. */
+
+.theme-dark {
+  /* accent: blue 400. Left as hue/saturation/lightness so the
+     accent picker in Settings → Appearance still works. */
+  --accent-h: 205;
+  --accent-s: 91%;
+  --accent-l: 62%;
+
+  /* base scale, dark to light */
+  --color-base-00: #171719; /* gray 900 */
+  --color-base-05: #1f1f22; /* gray 850 */
+  --color-base-10: #1f1f22; /* gray 850 */
+  --color-base-20: #27272c; /* gray 800 */
+  --color-base-25: #27272c; /* gray 800 */
+  --color-base-30: #34343a; /* gray 700 */
+  --color-base-35: #45454b; /* gray 600 */
+  --color-base-40: #45454b; /* gray 600 */
+  --color-base-50: #5b5b63; /* gray 500 */
+  --color-base-60: #7f7f87; /* gray 400 */
+  --color-base-70: #a5a5ae; /* gray 300 */
+  --color-base-100: #c5c5ce; /* gray 200 */
+
+  /* extended colors: 400 */
+  --color-red: #f9686e;
+  --color-red-rgb: 249, 104, 110;
+  --color-orange: #fa8938;
+  --color-orange-rgb: 250, 137, 56;
+  --color-yellow: #e4af2a;
+  --color-yellow-rgb: 228, 175, 42;
+  --color-green: #a0c438;
+  --color-green-rgb: 160, 196, 56;
+  --color-cyan: #16c5ce;
+  --color-cyan-rgb: 22, 197, 206;
+  --color-blue: #45abf6;
+  --color-blue-rgb: 69, 171, 246;
+  --color-purple: #9e89ea; /* violet */
+  --color-purple-rgb: 158, 137, 234;
+  --color-pink: #c18ae7; /* magenta */
+  --color-pink-rgb: 193, 138, 231;
+
+  /* backgrounds: sidebars sit below the editor, bars below that */
+  --background-primary: #171719; /* gray 900 */
+  --background-primary-alt: #1f1f22; /* gray 850 */
+  --background-secondary: #111113; /* gray 925 */
+  --background-secondary-alt: #0f0f11; /* gray 950 */
+  --background-modifier-hover: #1f1f22; /* gray 850 */
+  --background-modifier-active-hover: #27272c; /* gray 800 */
+  --background-modifier-border: #34343a; /* gray 700 */
+  --background-modifier-border-hover: #45454b; /* gray 600 */
+  --background-modifier-border-focus: #5b5b63; /* gray 500 */
+  --background-modifier-form-field: #1f1f22; /* gray 850 */
+  --background-modifier-message: #27272c; /* gray 800 */
+  --divider-color: #0f0f11; /* gray 950 */
+
+  /* interactive */
+  --interactive-normal: #27272c; /* gray 800 */
+  --interactive-hover: #34343a; /* gray 700 */
+
+  /* text */
+  --text-normal: #c5c5ce; /* gray 200 */
+  --text-muted: #a5a5ae; /* gray 300 */
+  --text-faint: #7f7f87; /* gray 400 */
+  --text-on-accent: #0f0f11; /* gray 950: white on blue 400 is only 2.5:1 */
+  --text-error: #f9686e; /* red 400 */
+  --text-warning: #e4af2a; /* yellow 400 */
+  --text-success: #a0c438; /* green 400 */
+  --text-selection: #45454b; /* gray 600 */
+  --text-highlight-bg: #44320a; /* yellow 900 */
+  --text-highlight-bg-rgb: 68, 50, 10;
+  --caret-color: #c5c5ce; /* gray 200 */
+
+  /* headings: no accent colors, same as the inline title */
+  --h1-color: #dddde4; /* gray 100 */
+  --h2-color: #dddde4; /* gray 100 */
+  --h3-color: #dddde4; /* gray 100 */
+  --h4-color: #dddde4; /* gray 100 */
+  --h5-color: #dddde4; /* gray 100 */
+  --h6-color: #dddde4; /* gray 100 */
+  --inline-title-color: #dddde4; /* gray 100 */
+
+  /* tags */
+  --tag-color: #65ddbb; /* teal 300 */
+  --tag-color-hover: #65ddbb; /* teal 300 */
+  --tag-background: #112b23; /* teal 950 */
+  --tag-background-hover: #073f32; /* teal 900 */
+
+  /* code: same roles as the Neovim syntax tokens */
+  --code-background: #1f1f22; /* gray 850 */
+  --code-normal: #c5c5ce; /* gray 200 */
+  --code-comment: #5b5b63; /* gray 500 */
+  --code-function: #45abf6; /* blue 400 */
+  --code-keyword: #9e89ea; /* violet 400 */
+  --code-important: #f9686e; /* red 400 */
+  --code-operator: #47d6dc; /* cyan 300 */
+  --code-property: #65ddbb; /* teal 300 */
+  --code-punctuation: #a5a5ae; /* gray 300 */
+  --code-string: #a0c438; /* green 400 */
+  --code-tag: #45abf6; /* blue 400 */
+  --code-value: #fa8938; /* orange 400 */
+
+  /* blockquote, lists, checkboxes */
+  --blockquote-border-color: #45454b; /* gray 600 */
+  --blockquote-color: #a5a5ae; /* gray 300 */
+  --blockquote-font-style: italic;
+  --list-marker-color: #47d6dc; /* cyan 300 */
+  --checkbox-color: #a0c438; /* green 400 */
+  --checkbox-color-hover: #b8d862; /* green 300 */
+  --checkbox-border-color: #7f7f87; /* gray 400 */
+  --checkbox-border-color-hover: #a5a5ae; /* gray 300 */
+  --checkbox-marker-color: #0f0f11; /* gray 950 */
+  --indentation-guide-color: #34343a; /* gray 700 */
+  --indentation-guide-color-active: #7f7f87; /* gray 400 */
+
+  /* graph */
+  --graph-line: #34343a; /* gray 700 */
+  --graph-node: #7f7f87; /* gray 400 */
+  --graph-node-unresolved: #5b5b63; /* gray 500 */
+  --graph-node-tag: #65ddbb; /* teal 300 */
+  --graph-node-attachment: #e4af2a; /* yellow 400 */
+  --graph-text: #c5c5ce; /* gray 200 */
+
+  /* window frame: titlebar, tabs and status bar match the Neovim tabline */
+  --titlebar-background: #0f0f11; /* gray 950 */
+  --titlebar-background-focused: #0f0f11; /* gray 950 */
+  --titlebar-border-color: #0f0f11; /* gray 950 */
+  --ribbon-background: #111113; /* gray 925 */
+  --tab-container-background: #0f0f11; /* gray 950 */
+  --tab-background-active: #171719; /* gray 900 */
+  --tab-outline-color: #0f0f11; /* gray 950 */
+  --tab-divider-color: #34343a; /* gray 700 */
+  --tab-text-color: #7f7f87; /* gray 400 */
+  --tab-text-color-focused: #a5a5ae; /* gray 300 */
+  --tab-text-color-focused-active: #c5c5ce; /* gray 200 */
+  --tab-text-color-focused-active-current: #dddde4; /* gray 100 */
+  --status-bar-background: #0f0f11; /* gray 950 */
+  --status-bar-border-color: #0f0f11; /* gray 950 */
+  --status-bar-text-color: #a5a5ae; /* gray 300 */
+
+  /* file explorer, modals, scrollbars */
+  --nav-item-color: #a5a5ae; /* gray 300 */
+  --nav-item-color-hover: #dddde4; /* gray 100 */
+  --nav-item-color-active: #dddde4; /* gray 100 */
+  --nav-item-background-hover: #1f1f22; /* gray 850 */
+  --nav-item-background-active: #27272c; /* gray 800 */
+  --modal-background: #111113; /* gray 925 */
+  --modal-border-color: #45454b; /* gray 600 */
+  --prompt-border-color: #45454b; /* gray 600 */
+  --scrollbar-thumb-bg: #34343a; /* gray 700 */
+  --scrollbar-active-thumb-bg: #45454b; /* gray 600 */
+}
+
+/* inline code uses the string color, like @markup.raw in Neovim */
+.theme-dark .cm-s-obsidian span.cm-inline-code,
+.theme-dark .markdown-rendered :not(pre) > code {
+  color: var(--code-string);
+}
