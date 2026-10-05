@@ -71,13 +71,13 @@
   --text-highlight-bg-rgb: 68, 50, 10;
   --caret-color: #c5c5ce; /* gray 200 */
 
-  /* headings: same order as @markup.heading.1-6 */
-  --h1-color: #f9686e; /* red 400 */
-  --h2-color: #fa8938; /* orange 400 */
-  --h3-color: #e4af2a; /* yellow 400 */
-  --h4-color: #a0c438; /* green 400 */
-  --h5-color: #45abf6; /* blue 400 */
-  --h6-color: #c18ae7; /* magenta 400 */
+  /* headings: no accent colors, same as the inline title */
+  --h1-color: #dddde4; /* gray 100 */
+  --h2-color: #dddde4; /* gray 100 */
+  --h3-color: #dddde4; /* gray 100 */
+  --h4-color: #dddde4; /* gray 100 */
+  --h5-color: #dddde4; /* gray 100 */
+  --h6-color: #dddde4; /* gray 100 */
   --inline-title-color: #dddde4; /* gray 100 */
 
   /* tags */
