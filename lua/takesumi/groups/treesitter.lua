@@ -93,7 +93,7 @@ function M.get(c, opts)
     ["@markup.heading.5"] = { fg = p.blue[400], bold = true },
     ["@markup.heading.6"] = { fg = p.magenta[400], bold = true },
     ["@markup.quote"] = { fg = c.fg_dim, italic = true },
-    ["@markup.math"] = { fg = c.special },
+    ["@markup.math"] = { fg = c.fg_bright },
     ["@markup.environment"] = { fg = c.keyword },
     ["@markup.environment.name"] = { fg = c.type },
     ["@markup.link"] = { fg = c.property },
