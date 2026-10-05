@@ -42,6 +42,9 @@ lualine: `require("lualine").setup({ options = { theme = "takesumi" } })`
 
 - Ghostty: copy `extras/ghostty/takesumi` to `~/.config/ghostty/themes/takesumi`,
   then set `theme = takesumi` in your Ghostty config.
+- Obsidian (dark mode only): copy `extras/obsidian/takesumi` to
+  `<vault>/.obsidian/themes/takesumi`, then pick takesumi under
+  Settings → Appearance → Themes and set the base color scheme to Dark.
 
 ## Structure
 
