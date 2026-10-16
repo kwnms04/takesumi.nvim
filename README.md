@@ -42,6 +42,9 @@ lualine: `require("lualine").setup({ options = { theme = "takesumi" } })`
 
 - Ghostty: copy `extras/ghostty/takesumi` to `~/.config/ghostty/themes/takesumi`,
   then set `theme = takesumi` in your Ghostty config.
+- tmux (3.4+): copy `extras/tmux/takesumi.tmux` to `~/.config/tmux/takesumi.tmux`,
+  then add `source-file ~/.config/tmux/takesumi.tmux` to your `tmux.conf`.
+  The session name turns yellow while the prefix is held.
 - Obsidian (dark mode only): copy `extras/obsidian/takesumi` to
   `<vault>/.obsidian/themes/takesumi`, then pick takesumi under
   Settings → Appearance → Themes and set the base color scheme to Dark.
